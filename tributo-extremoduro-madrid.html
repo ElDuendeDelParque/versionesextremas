@@ -1,162 +1,214 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Tributo a Extremoduro y Robe en Madrid | El Duende Del Parque</title>
 
-<meta name="description" content="El Duende Del Parque es una banda tributo a Extremoduro y Robe en Madrid. Conciertos, festivales, eventos privados y contratación para salas de toda España.">
-
-<meta name="keywords" content="tributo Extremoduro Madrid, tributo Robe Madrid, banda tributo Extremoduro, grupo tributo Robe, conciertos rock Madrid, El Duende Del Parque">
+<meta name="description" content="El Duende Del Parque es una banda tributo a Extremoduro y Robe en Madrid. Conciertos, eventos y contratación para salas, festivales y fiestas.">
+<meta name="keywords" content="Extremoduro, Robe, tributo Extremoduro, banda tributo Robe, conciertos Madrid, rock español, versiones Extremoduro">
 
 <link rel="icon" href="logo.png">
 
+<!-- Fonts (IGUAL QUE LA PRINCIPAL) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
 <meta property="og:title" content="El Duende Del Parque | Tributo a Extremoduro y Robe">
-<meta property="og:description" content="Banda tributo a Extremoduro y Robe con base en Madrid.">
+<meta property="og:description" content="Banda tributo a Extremoduro y Robe en Madrid">
 <meta property="og:image" content="https://elduendedelparque.github.io/versionesextremas/logo.png">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://elduendedelparque.github.io/versionesextremas/tributo-extremoduro-madrid.html">
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "MusicGroup",
-  "name": "El Duende Del Parque",
-  "description": "Banda tributo a Extremoduro y Robe",
-  "genre": "Rock",
-  "url": "https://elduendedelparque.github.io/versionesextremas/",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Alcorcón",
-    "addressRegion": "Madrid",
-    "addressCountry": "ES"
-  }
-}
-</script>
-
 <style>
-.titulo-seo {
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  :root {
+    --bg: #0e0c0a;
+    --bg2: #141109;
+    --text: #d2c9a8;
+    --muted: #7a7260;
+    --cream: #cfc4a0;
+    --accent: #7b1d1d;
+    --accent2: #b83228;
+    --green: #3a5228;
+    --green2: #5a7840;
+
+    --font-head: 'Oswald', sans-serif;
+    --font-body: 'Crimson Text', serif;
+    --font-mono: 'Share Tech Mono', monospace;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    line-height: 1.8;
+    font-size: 18px;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+  }
+
+  /* ===== TÍTULO SEO ===== */
+  .titulo-seo {
     text-align: center;
-    font-size: 2.5rem;
-    line-height: 1.2;
-    margin: 50px 0;
-    color: #cfc4a0;
+    margin: 3rem 0 4rem;
+    font-family: var(--font-head);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-.titulo-seo span {
-    display: block;
-    font-size: 1.4rem;
-    color: #b83228;
-    margin-top: 12px;
-}
-  
-body{
-    max-width:900px;
-    margin:auto;
-    padding:40px 20px;
-    font-family: Georgia, serif;
-    line-height:1.8;
-    color:#222;
-}
+    letter-spacing: 0.08em;
+    line-height: 1.2;
+  }
 
-h1,h2{
-    color:#111;
-}
+  .titulo-seo .line1 {
+    font-size: clamp(1.6rem, 4vw, 2.6rem);
+    color: var(--cream);
+  }
 
-img{
-    max-width:100%;
-    height:auto;
-    margin:20px 0;
-}
+  .titulo-seo .duende {
+    color: var(--accent2);
+  }
+
+  .titulo-seo .parque {
+    color: var(--green2);
+  }
+
+  .titulo-seo .line2 {
+    font-size: 1.2rem;
+    margin-top: 0.6rem;
+    font-family: var(--font-mono);
+    color: var(--muted);
+  }
+
+  h2 {
+    font-family: var(--font-head);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--cream);
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #2a2418;
+    padding-bottom: 0.8rem;
+  }
+
+  p {
+    margin-bottom: 1.2rem;
+  }
+
+  ul {
+    margin-left: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  ul li {
+    margin-bottom: 0.6rem;
+  }
+
+  strong {
+    color: var(--cream);
+  }
+
+  em {
+    color: var(--accent2);
+    font-style: italic;
+  }
+
+  img {
+    width: 100%;
+    margin: 2rem 0;
+    border: 1px solid #2a2418;
+  }
+
+  a {
+    color: var(--accent2);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--cream);
+  }
 </style>
-
 </head>
+
 <body>
 
-<h1 class="titulo-seo">
-  Tributo a Extremoduro y Robe en Madrid<br>
-  <span>El Duende Del Parque</span>
-</h1>
-<img src="foto-grupo.jpg"
-alt="El Duende Del Parque, banda tributo a Extremoduro y Robe en Madrid">
+<div class="container">
 
-<h2>El Duende Del Parque: tributo a Extremoduro y Robe</h2>
+  <!-- TÍTULO SEO BONITO + BRANDING -->
+  <h1 class="titulo-seo">
+    <div class="line1">
+      Tributo a <span>Extremoduro</span> y <span>Robe</span> en Madrid
+    </div>
+    <div class="line1">
+      <span class="duende">El Duende</span> Del <span class="parque">Parque</span>
+    </div>
+    <div class="line2">
+      banda tributo a Extremoduro y Robe
+    </div>
+  </h1>
 
-<p>
-Somos <strong>El Duende Del Parque</strong>, una banda tributo a Extremoduro y Robe formada por músicos unidos por una misma pasión: la obra de Roberto Iniesta. Nuestro objetivo es rendir homenaje a uno de los artistas más importantes de la historia del rock español y mantener vivas unas canciones que han acompañado a varias generaciones.
-</p>
+  <img src="foto-grupo.jpg" alt="El Duende Del Parque banda tributo a Extremoduro y Robe">
 
-<p>
-Desde los primeros acordes de <em>Rock Transgresivo</em> hasta los temas más recientes de <em>Se Nos Lleva El Aire</em>, nuestro repertorio recorre toda la trayectoria musical de Robe, pasando por las diferentes etapas de Extremoduro y sus discos como Robe rodeado de músicos extremeños.
-</p>
+  <h2>El Duende Del Parque: tributo a Extremoduro y Robe</h2>
 
-<h2>Una banda hecha para sonar fuerte</h2>
+  <p>
+  Somos <strong>El Duende Del Parque</strong>, un grupo de músicos unidos por una misma pasión: la obra de <strong>Roberto Iniesta, Robe</strong>.
+  </p>
 
-<p>
-El Duende Del Parque apuesta por un directo potente, cargado de energía y fiel al espíritu del rock urbano que convirtió a Extremoduro en una referencia para miles de seguidores.
-</p>
+  <p>
+  La banda suena cañera, con tres guitarras, un bajo potente, batería contundente y voz al frente.
+  </p>
 
-<p>
-La formación está compuesta por:
-</p>
+  <ul>
+    <li><strong>Dani</strong>, maltratando cariñosamente la batería.</li>
+    <li><strong>Sergio</strong>, domesticando el bajo.</li>
+    <li><strong>Miguel</strong>, sacándole chispas a la guitarra.</li>
+    <li><strong>Kike</strong>, repartiendo riffs y coros.</li>
+    <li><strong>Diego</strong>, invocando solos infernales.</li>
+    <li><strong>Pablo</strong>, gritando al micrófono.</li>
+  </ul>
 
-<ul>
-<li><strong>Dani</strong>, maltratando cariñosamente la batería.</li>
-<li><strong>Sergio</strong>, domesticando el bajo.</li>
-<li><strong>Miguel</strong>, sacándole chispas a la guitarra.</li>
-<li><strong>Kike</strong>, repartiendo riffs y coros.</li>
-<li><strong>Diego</strong>, invocando solos infernales.</li>
-<li><strong>Pablo</strong>, dejándose la garganta al micrófono.</li>
-</ul>
+  <h2>Nuestro local de ensayo</h2>
 
-<p>
-Con tres guitarras sobre el escenario, una base rítmica contundente y muchas horas de ensayo a nuestras espaldas, buscamos ofrecer conciertos que transmitan la fuerza, la emoción y la personalidad de las canciones de Robe.
-</p>
+  <p>
+  Tenemos nuestra sala de ensayo en <strong>Alcorcón</strong>, donde nos reunimos semanalmente para trabajar el repertorio, probar ideas nuevas y seguir construyendo el sonido del grupo.
+  </p>
 
-<h2>Nuestro refugio: Alcorcón</h2>
+  <h2>Repertorio de Extremoduro y Robe</h2>
 
-<p>
-Nuestra sala de ensayo está en Alcorcón, Madrid, donde nos reunimos cada semana para seguir ampliando el repertorio, probar nuevos arreglos y perfeccionar cada detalle de nuestros conciertos.
-</p>
+  <p>
+  Nuestro repertorio abarca toda la trayectoria de Robe y Extremoduro, desde <em>Rock Transgresivo (1989)</em> hasta <em>Se Nos Lleva El Aire</em>.
+  </p>
 
-<p>
-Ese local se ha convertido en nuestro pequeño refugio musical, el lugar donde nacen las ideas, se pulen los temas y se prepara cada actuación.
-</p>
+  <p>
+  Algunas de nuestras canciones favoritas incluyen:
+  </p>
 
-<h2>Un recorrido por toda la obra de Robe</h2>
+  <p>
+  Amor Castúo, A Fuego, La Hoguera, Decidí, No Me Calientes Que Me Hundo, El Duende Del Parque, Jesucristo García,
+  La Vereda de la Puerta de Atrás, Deltoya, Tu Corazón, Salir, Golfa, Standby, Sucede, So Payaso, Si Te Vas,
+  y por supuesto <strong>Ama, Ama, Ama y Ensancha el Alma</strong>.
+  </p>
 
-<p>
-Nuestro repertorio abarca prácticamente toda la carrera del artista extremeño. Nos gusta combinar clásicos imprescindibles con canciones menos habituales para ofrecer una experiencia completa tanto a seguidores veteranos como a quienes descubren esta música por primera vez.
-</p>
+  <h2>Conciertos y contratación</h2>
 
-<p>
-Entre nuestras canciones favoritas se encuentran:
-</p>
+  <p>
+  Actuamos en salas, festivales, fiestas y eventos privados. Estamos disponibles para contratación en Madrid y cualquier punto de España.
+  </p>
 
-<p>
-Amor Castúo, A Fuego, La Hoguera, Decidí, No Me Calientes Que Me Hundo, El Duende Del Parque, Jesucristo García, La Vereda de la Puerta de Atrás, Deltoya, Tu Corazón, Salir, Golfa, Standby, Sucede, So Payaso y Si Te Vas.
-</p>
+  <p>
+  Si buscas una banda tributo a Extremoduro y Robe, contacta con nosotros.
+  </p>
 
-<p>
-Y por supuesto, nunca falta uno de los himnos más queridos por el público: <strong>Ama, Ama, Ama y Ensancha el Alma</strong>.
-</p>
-
-<h2>Conciertos y contratación</h2>
-
-<p>
-Actuamos en salas de conciertos, festivales, fiestas populares, eventos culturales, etc. Nuestra base está en Madrid, pero estamos abiertos a propuestas en cualquier punto de España.
-</p>
-
-<p>
-Si buscas una banda tributo a Extremoduro y Robe para tu evento, estaremos encantados de compartir escenario, carretera y canciones con vosotros.
-</p>
-
-<p>
-Porque algunas canciones nunca dejan de sonar en nuestras cabezas, hay que cantarlas y bailarlas en buena compañía.
-</p>
+</div>
 
 </body>
 </html>
