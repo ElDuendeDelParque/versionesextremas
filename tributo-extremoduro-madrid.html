@@ -11,6 +11,18 @@
 
 <link rel="icon" href="logo.png">
 
+<!-- Fonts (IGUAL QUE LA PRINCIPAL) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+<meta property="og:title" content="El Duende Del Parque | Tributo a Extremoduro y Robe">
+<meta property="og:description" content="Banda tributo a Extremoduro y Robe en Madrid">
+<meta property="og:image" content="https://elduendedelparque.github.io/versionesextremas/logo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://elduendedelparque.github.io/versionesextremas/tributo-extremoduro-madrid.html">
+
+<meta name="robots" content="index, follow">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -28,213 +40,135 @@
   }
 }
 </script>
- 
-<!-- Fonts (IGUAL QUE LA PRINCIPAL) -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
-<meta property="og:title" content="El Duende Del Parque | Tributo a Extremoduro y Robe">
-<meta property="og:description" content="Banda tributo a Extremoduro y Robe en Madrid">
-<meta property="og:image" content="https://elduendedelparque.github.io/versionesextremas/logo.png">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://elduendedelparque.github.io/versionesextremas/tributo-extremoduro-madrid.html">
-<meta name="robots" content="index, follow">
 <style>
-  *, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  :root {
-    --bg: #0e0c0a;
-    --bg2: #141109;
-    --text: #d2c9a8;
-    --muted: #7a7260;
-    --cream: #cfc4a0;
-    --accent: #7b1d1d;
-    --accent2: #b83228;
-    --green: #3a5228;
-    --green2: #5a7840;
-
-    --font-head: 'Oswald', sans-serif;
-    --font-body: 'Crimson Text', serif;
-    --font-mono: 'Share Tech Mono', monospace;
-  }
-
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: var(--font-body);
-    line-height: 1.8;
-    font-size: 18px;
-  }
-
-  .container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 3rem 1.5rem;
-  }
-
-  /* ===== TÍTULO SEO ===== */
-  .titulo-seo {
-    text-align: center;
-    margin: 3rem 0 4rem;
-    font-family: var(--font-head);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    line-height: 1.2;
-  }
-
-  .titulo-seo .line1 {
-    font-size: clamp(1.6rem, 4vw, 2.6rem);
-    color: var(--cream);
-  }
-
-  .titulo-seo .duende {
-    color: var(--accent2);
-  }
-
-  .titulo-seo .parque {
-    color: var(--green2);
-  }
-
-  .titulo-seo .line2 {
-    font-size: 1.2rem;
-    margin-top: 0.6rem;
-    font-family: var(--font-mono);
-    color: var(--muted);
-  }
-
-  h2 {
-    font-family: var(--font-head);
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--cream);
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid #2a2418;
-    padding-bottom: 0.8rem;
-  }
-
-  p {
-    margin-bottom: 1.2rem;
-  }
-
-  ul {
-    margin-left: 1.2rem;
-    margin-bottom: 1.5rem;
-  }
-
-  ul li {
-    margin-bottom: 0.6rem;
-  }
-
-  strong {
-    color: var(--cream);
-  }
-
-  em {
-    color: var(--accent2);
-    font-style: italic;
-  }
-
-  img {
-    width: 100%;
-    margin: 2rem 0;
-    border: 1px solid #2a2418;
-  }
-
-  a {
-    color: var(--accent2);
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: var(--cream);
-  }
-
- .contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3.5rem;
-  align-items: start;
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-.contact-info p {
-  font-size: 1rem;
-  color: var(--muted);
-  margin-bottom: 2rem;
-  line-height: 1.7;
+:root {
+  --bg:#0e0c0a;
+  --bg2:#141109;
+  --text:#d2c9a8;
+  --muted:#7a7260;
+  --cream:#cfc4a0;
+  --accent:#7b1d1d;
+  --accent2:#b83228;
+  --green:#3a5228;
+  --green2:#5a7840;
+  --border:#2a2418;
+
+  --font-head:'Oswald', sans-serif;
+  --font-body:'Crimson Text', serif;
+  --font-mono:'Share Tech Mono', monospace;
 }
 
-.contact-item {
-  margin-bottom: 1rem;
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
+body {
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--font-body);
+  line-height:1.8;
+  font-size:18px;
 }
 
-.contact-item .clabel {
-  color: var(--muted);
-  text-transform: uppercase;
-  font-size: 0.6rem;
-  letter-spacing: 0.16em;
-  display: block;
-  margin-bottom: 2px;
+.container {
+  max-width:900px;
+  margin:0 auto;
+  padding:3rem 1.5rem;
 }
 
-.contact-item a {
-  color: var(--text);
-  text-decoration: none;
+/* ===== TÍTULO ===== */
+.titulo-seo {
+  text-align:center;
+  margin:3rem 0 4rem;
+  font-family:var(--font-head);
+  text-transform:uppercase;
+  letter-spacing:0.08em;
+  line-height:1.2;
 }
 
-.contact-item a:hover {
-  color: var(--accent2);
+.line1 {
+  font-size:clamp(1.8rem,4vw,2.8rem);
+  color:var(--cream);
+}
+
+.duende { color:var(--accent2); }
+.parque { color:var(--green2); }
+
+.line2 {
+  font-size:1rem;
+  margin-top:0.6rem;
+  font-family:var(--font-mono);
+  color:var(--muted);
+}
+
+h2 {
+  font-family:var(--font-head);
+  text-transform:uppercase;
+  color:var(--cream);
+  border-bottom:1px solid var(--border);
+  padding-bottom:0.6rem;
+  margin:2.5rem 0 1rem;
+  letter-spacing:0.06em;
+}
+
+p { margin-bottom:1.2rem; }
+
+ul { margin-left:1.2rem; margin-bottom:1.5rem; }
+li { margin-bottom:0.5rem; }
+
+strong { color:var(--cream); }
+em { color:var(--accent2); font-style:italic; }
+
+.verde { color:var(--green2); }
+
+img {
+  width:100%;
+  margin:2rem 0;
+  border:1px solid var(--border);
+}
+
+/* ===== FORM ===== */
+.contact-form {
+  margin-top:3rem;
+  display:flex;
+  flex-direction:column;
+  gap:0.8rem;
 }
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
-  background: var(--bg2);
-  border: 1px solid var(--border);
-  color: var(--text);
-  font-family: var(--font-body);
-  font-size: 1rem;
-  padding: 0.75rem 1rem;
-  margin-bottom: 0.7rem;
-  outline: none;
-  transition: border-color 0.2s;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: var(--accent2);
+  width:100%;
+  background:var(--bg2);
+  border:1px solid var(--border);
+  color:var(--text);
+  font-family:var(--font-body);
+  padding:0.8rem 1rem;
+  outline:none;
 }
 
 .contact-form textarea {
-  height: 120px;
-  resize: vertical;
+  height:120px;
+  resize:vertical;
 }
 
 .contact-form button {
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  padding: 0.75rem 2rem;
-  border: 1px solid var(--accent);
-  background: transparent;
-  color: var(--accent2);
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s;
+  font-family:var(--font-mono);
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  padding:0.8rem 1.2rem;
+  border:1px solid var(--accent);
+  background:transparent;
+  color:var(--accent2);
+  cursor:pointer;
 }
 
 .contact-form button:hover {
-  background: var(--accent);
-  color: var(--cream);
+  background:var(--accent);
+  color:var(--cream);
 }
-
 </style>
 </head>
 
@@ -242,9 +176,9 @@
 
 <div class="container">
 
-  <!-- TÍTULO SEO BONITO + BRANDING -->
+  <!-- TITULO -->
   <h1 class="titulo-seo">
-        <div class="line1">
+    <div class="line1">
       El <span class="duende">Duende</span> Del <span class="parque">Parque</span>
     </div>
     <div class="line2">
@@ -254,77 +188,73 @@
 
   <img src="foto-grupo.jpg" alt="El Duende Del Parque banda tributo a Extremoduro y Robe">
 
-  <h2>Tributo a Roberto Iniesta y los músicos que lo acompañaron</h2>
+  <h2>Tributo a Roberto Iniesta</h2>
+
+  <p>Somos <strong>El Duende Del Parque</strong>, una banda tributo a Extremoduro y Robe...</p>
 
   <p>
-  Somos <strong>El Duende Del Parque</strong>, una banda tributo a Extremoduro y Robe formada por músicos unidos por una misma pasión: la obra de Roberto Iniesta. Nuestro objetivo es rendir homenaje a uno de los artistas más importantes de la historia del rock español y mantener vivas unas canciones que han acompañado a varias generaciones.
+    Apostamos por un directo potente, cargado de energía y fiel al espíritu del rock.
   </p>
-
-  <p>
-  Apostamos por un directo potente, cargado de energía y fiel al espíritu del rock urbano que convirtió a Extremoduro en una referencia para miles de seguidores. <p> Con tres guitarras sobre el escenario, una base rítmica contundente y muchas horas de ensayo a nuestras espaldas, buscamos ofrecer conciertos que transmitan la fuerza, la emoción y la personalidad de las canciones de Robe.</p>  </p>
 
   <ul>
-    <li><strong>Dani</strong>, maltratando cariñosamente la batería.</li>
-    <li><strong>Sergio</strong>, domesticando el bajo.</li>
-    <li><strong>Miguel</strong>, sacándole chispas a la guitarra.</li>
-    <li><strong>Kike</strong>, repartiendo riffs y coros.</li>
-    <li><strong>Diego</strong>, invocando solos infernales.</li>
-    <li><strong>Pablo</strong>, gritando al micrófono.</li>
+    <li><strong>Dani</strong>, batería.</li>
+    <li><strong>Sergio</strong>, bajo.</li>
+    <li><strong>Miguel</strong>, guitarra.</li>
+    <li><strong>Kike</strong>, guitarra y coros.</li>
+    <li><strong>Diego</strong>, solos.</li>
+    <li><strong>Pablo</strong>, voz.</li>
   </ul>
 
-  <h2>Nuestro refugio</h2>
-
-<p>
- Nuestra sala de ensayo está en Alcorcón, Madrid, donde nos reunimos cada semana para seguir ampliando el repertorio, probar nuevos arreglos y perfeccionar cada detalle de nuestros conciertos. </p> <p> Ese local se ha convertido en nuestro pequeño refugio musical, el lugar donde nacen las ideas, se pulen los temas y se prepara cada actuación.
-</p>
-
-  <h2>Repertorio de Extremoduro y Robe</h2>
+  <h2>Repertorio</h2>
 
   <p>
-  Nuestro repertorio abarca prácticamente toda la carrera del artista extremeño, desde los primeros acordes de <em>Rock Transgresivo</em> hasta los temas más recientes de <em class="verde">Se Nos Lleva El Aire</em>. Nos gustan temas de las diferentes etapas de Extremoduro y de los discos como Robe rodeado de músicos extremeños.
-  </p>
-
-  <p>
-  Algunas de nuestras canciones favoritas incluyen:
-  </p>
-
-  <p>
-  Amor Castúo, A Fuego, La Hoguera, Decidí, No Me Calientes Que Me Hundo, El Duende Del Parque, Jesucristo García,
-  La Vereda de la Puerta de Atrás, Deltoya, Tu Corazón, Salir, Golfa, Standby, Sucede, So Payaso, Si Te Vas,
-  y por supuesto para terminar cualquier concierto <strong>Ama, Ama, Ama y Ensancha el Alma</strong>.
+    Desde <em>Rock Transgresivo</em> hasta <em class="verde">Se Nos Lleva El Aire</em>,
+    recorriendo toda la obra de Robe.
   </p>
 
   <h2>Conciertos y contratación</h2>
 
-  <p>Actuamos en salas de conciertos, festivales, fiestas populares, eventos culturales, etc. Nuestra base está en Madrid, pero estamos abiertos a propuestas en cualquier punto de España.</p>
-  <p> Si buscas una banda tributo a Extremoduro y Robe para tu evento, estaremos encantados de compartir escenario, carretera y canciones con vosotros.</p>
-  <p> Porque algunas canciones nunca dejan de sonar en nuestras cabezas, hay que cantarlas y bailarlas en buena compañía.</p>
+  <p>
+    Actuamos en salas, festivales y eventos por toda España.
+  </p>
+
+  <p>
+    Si quieres contratarnos, escríbenos aquí:
+  </p>
+
+  <!-- FORMULARIO -->
+  <form class="contact-form"
+        action="https://formspree.io/f/mjgzarae"
+        method="POST"
+        onsubmit="handleSubmit(event)">
+
+    <input type="text" name="nombre" placeholder="Nombre" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+
+    <button type="submit">Enviar mensaje</button>
+  </form>
 
 </div>
 
- </div>
-      <form class="contact-form" action="https://formspree.io/f/mjgzarae" method="POST">
-        <input type="text" name="nombre" placeholder="Nombre" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <textarea name="mensaje" placeholder="Mensaje" required></textarea>
-        <button type="submit">Enviar mensaje</button>
-      </form>
-    </div>
- <script>
+<script>
 function handleSubmit(e) {
   e.preventDefault();
   var btn = e.target.querySelector('button');
   var orig = btn.textContent;
-  btn.textContent = 'Mensaje enviado \u2713';
+
+  btn.textContent = 'Mensaje enviado ✓';
   btn.style.borderColor = '#5a7840';
   btn.style.color = '#5a7840';
-  setTimeout(function() {
+
+  setTimeout(function () {
     btn.textContent = orig;
     btn.style.borderColor = '';
     btn.style.color = '';
     e.target.reset();
-  }, 3500);
+  }, 3000);
 }
 </script>
+
 </body>
 </html>
