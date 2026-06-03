@@ -51,6 +51,7 @@
 :root {
   --bg:#0e0c0a;
   --bg2:#141109;
+  --bg3:#1c180f;
   --text:#d2c9a8;
   --muted:#7a7260;
   --cream:#cfc4a0;
@@ -59,7 +60,6 @@
   --green:#3a5228;
   --green2:#5a7840;
   --border:#2a2418;
-
   --font-head:'Oswald', sans-serif;
   --font-body:'Crimson Text', serif;
   --font-mono:'Share Tech Mono', monospace;
@@ -149,7 +149,16 @@ img {
 }
 
 /* ===== FORM ===== */
-.contact-form {
+.contact-email a{
+  color:var(--text);
+  text-decoration:none;
+}
+
+.contact-email a:hover{
+  color:var(--accent2);
+}
+  
+  .contact-form {
   margin-top:3rem;
   display:flex;
   flex-direction:column;
@@ -164,15 +173,18 @@ img {
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
   color: var(--muted);
-}
-  .contact-form textarea {
+
+.contact-form input,
+.contact-form textarea {
   width:100%;
-  background:var(--bg2);
+  background:var(--bg3);
   border:1px solid var(--border);
   color:var(--text);
   font-family:var(--font-body);
-  padding:0.8rem 1rem;
+  font-size:1rem;
+  padding:0.75rem 1rem;
   outline:none;
+  transition:border-color .2s;
 }
 
 .contact-form textarea {
@@ -195,6 +207,46 @@ img {
   background:var(--accent);
   color:var(--cream);
 }
+
+footer {
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-top: 4rem;
+}
+
+footer .footer-logo {
+  width: 120px;
+  margin: 0 auto 1rem;
+  opacity: 0.55;
+  display: block;
+}
+
+footer .footer-name {
+  color: var(--cream);
+  display: block;
+  font-size: 0.72rem;
+  margin-bottom: 0.3rem;
+}
+
+footer .footer-quote {
+  display: block;
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+  text-transform: none;
+  margin-top: 0.8rem;
+  opacity: 0.6;
+}
+
 </style>
 </head>
 
@@ -246,10 +298,11 @@ img {
   <p> Si buscas una banda tributo a Extremoduro y Robe para tu evento, estaremos encantados de compartir algunos temazos con vosotros.</p>
   <p> Porque algunas canciones nunca dejan de sonar en nuestras cabezas, hay que cantarlas y bailarlas en buena compañía.</p>
   <p> ¿Quieres contratarnos para un bolo, tienes alguna propuesta o simplemente quieres decirnos algo? Escríbenos.</p>
-  <p><strong>Email:</strong>
-  <a href="mailto:soyunduendedelparque@gmail.com">
-  soyunduendedelparque@gmail.com
-  </a>
+  <p class="contact-email">
+    <strong>Email:</strong>
+    <a href="mailto:soyunduendedelparque@gmail.com">
+    soyunduendedelparque@gmail.com
+    </a>
   </p>
    
     <!-- FORMULARIO -->
@@ -263,6 +316,22 @@ img {
 
     <button type="submit">Enviar mensaje</button>
   </form>
+    
+</div>
+
+<footer>
+  <img src="logo.png"
+       alt="Logo oficial de El Duende Del Parque"
+       class="footer-logo">
+
+  <span class="footer-name">El Duende Del Parque</span>
+
+  Tributo a Extremoduro y Robe
+
+  <span class="footer-quote">
+    "Hasta siempre, siempre, siempre."
+  </span>
+</footer>
 
 </body>
 </html>
