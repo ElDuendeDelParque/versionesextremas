@@ -156,8 +156,16 @@ img {
   gap:0.8rem;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--accent);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--muted);
+}
+  .contact-form textarea {
   width:100%;
   background:var(--bg2);
   border:1px solid var(--border);
@@ -247,7 +255,7 @@ img {
     <!-- FORMULARIO -->
   <form class="contact-form"
         action="https://formspree.io/f/mjgzarae"
-        method="POST"
+        method="POST">
         
     <input type="text" name="nombre" placeholder="Nombre" required>
     <input type="email" name="email" placeholder="Email" required>
