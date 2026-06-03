@@ -78,7 +78,25 @@ body {
   margin:0 auto;
   padding:3rem 1.5rem;
 }
+  
+.back-btn{
+  display:inline-block;
+  padding:0.55rem 1.1rem;
+  border:1px solid var(--accent);
+  color:var(--accent2);
+  text-decoration:none;
+  font-family:var(--font-mono);
+  font-size:.75rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  transition:.2s;
+}
 
+.back-btn:hover{
+  background:var(--accent);
+  color:var(--cream);
+}
+  
 /* ===== TÍTULO ===== */
 .titulo-seo {
   text-align:center;
@@ -174,8 +192,11 @@ img {
 
 <body>
 
-<div class="container">
-
+  <div class="container">
+  
+  <div style="text-align:center; margin-bottom:2rem;">
+    <a href="index.html" class="back-btn">Página Principal</a>
+  </div>
   <!-- TITULO -->
   <h1 class="titulo-seo">
     <div class="line1">
