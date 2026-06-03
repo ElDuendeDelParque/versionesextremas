@@ -217,41 +217,17 @@ img {
   <p> Si buscas una banda tributo a Extremoduro y Robe para tu evento, estaremos encantados de compartir algunos temazos con vosotros.</p>
   <p> Porque algunas canciones nunca dejan de sonar en nuestras cabezas, hay que cantarlas y bailarlas en buena compañía.</p>
 
-</div>
-
   <!-- FORMULARIO -->
   <form class="contact-form"
         action="https://formspree.io/f/mjgzarae"
         method="POST"
-        onsubmit="handleSubmit(event)">
-
+        
     <input type="text" name="nombre" placeholder="Nombre" required>
     <input type="email" name="email" placeholder="Email" required>
     <textarea name="mensaje" placeholder="Mensaje" required></textarea>
 
     <button type="submit">Enviar mensaje</button>
   </form>
-
-</div>
-
-<script>
-function handleSubmit(e) {
-  e.preventDefault();
-  var btn = e.target.querySelector('button');
-  var orig = btn.textContent;
-
-  btn.textContent = 'Mensaje enviado ✓';
-  btn.style.borderColor = '#5a7840';
-  btn.style.color = '#5a7840';
-
-  setTimeout(function () {
-    btn.textContent = orig;
-    btn.style.borderColor = '';
-    btn.style.color = '';
-    e.target.reset();
-  }, 3000);
-}
-</script>
 
 </body>
 </html>
