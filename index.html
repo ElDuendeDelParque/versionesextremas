@@ -99,7 +99,13 @@ content="Extremoduro, Robe, tributo Extremoduro, banda tributo Robe, conciertos 
   .gallery-item:hover { border-color: var(--accent2); }
   .gallery-item svg { opacity: 0.2; margin-bottom: 4px; }
   .sub-label { font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin: 2.2rem 0 0.7rem; }
-  .recordings-placeholder { padding: 2.5rem; border: 1px solid var(--border); background: var(--bg3); text-align: center; font-style: italic; color: var(--muted); font-size: 1rem; }
+  .video-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.8rem; margin-top: 1.5rem; }
+  .video-item { min-width: 0; }
+  .video-frame { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border: 1px solid var(--border); background: #000; }
+  .video-frame iframe { width: 100%; height: 100%; display: block; border: 0; }
+  .video-title { margin: 0.75rem 0 0.1rem; color: var(--cream); font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; }
+  .video-caption { margin: 0; color: var(--muted); font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; }
+  .video-note { margin-top: 1.8rem; color: var(--muted); font-size: 0.95rem; font-style: italic; text-align: center; }
   .recording-item { background: var(--bg3); border: 1px solid var(--border); padding: 0.9rem 1.2rem; display: flex; align-items: center; gap: 1rem; transition: border-color 0.2s; text-decoration: none; }
   .recording-item:hover { border-color: var(--accent2); }
   .rec-play { width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
@@ -131,7 +137,9 @@ content="Extremoduro, Robe, tributo Extremoduro, banda tributo Robe, conciertos 
   @media (max-width: 680px) {
     nav { padding: 0 1rem; } .nav-links { gap: 1.2rem; } .nav-links li:nth-child(n+5) { display: none; }
     .sobre-grid { grid-template-columns: 1fr; gap: 2rem; } .sobre-img-placeholder { aspect-ratio: 16/9; }
-    .gallery-grid { grid-template-columns: repeat(2,1fr); } .contact-grid { grid-template-columns: 1fr; }
+    .gallery-grid { grid-template-columns: repeat(2,1fr); }
+    .video-grid { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
     .show-item { grid-template-columns: 56px 1fr; } .show-item .btn { display: none; }
   }
 </style>
@@ -245,8 +253,71 @@ content="Extremoduro, Robe, tributo Extremoduro, banda tributo Robe, conciertos 
       <div class="gallery-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" width="28" height="28"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>foto</div>
       <div class="gallery-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" width="28" height="28"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>foto</div> -->
     </div>
-    <p class="sub-label" style="margin-top:2.5rem;">Grabaciones</p>
-    <div class="recordings-placeholder">Pronto habrá vídeos y grabaciones de nuestras actuaciones.</div>
+    <p class="sub-label" style="margin-top:2.5rem;">Vídeos</p>
+    <div class="video-grid">
+
+      <div class="video-item">
+        <div class="video-frame">
+          <!-- Sustituye VIDEO_ID_1 por el ID del vídeo de YouTube -->
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID_1"
+            title="El Duende Del Parque – Amor Castúo"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <p class="video-title">Amor Castúo</p>
+        <p class="video-caption">Directo</p>
+      </div>
+
+      <div class="video-item">
+        <div class="video-frame">
+          <!-- Sustituye VIDEO_ID_2 por el ID del vídeo de YouTube -->
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID_2"
+            title="El Duende Del Parque – Jesucristo García"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <p class="video-title">Jesucristo García</p>
+        <p class="video-caption">Directo</p>
+      </div>
+
+      <div class="video-item">
+        <div class="video-frame">
+          <!-- Sustituye VIDEO_ID_3 por el ID del vídeo de YouTube -->
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID_3"
+            title="El Duende Del Parque – Salir"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <p class="video-title">Salir</p>
+        <p class="video-caption">Directo</p>
+      </div>
+
+      <div class="video-item">
+        <div class="video-frame">
+          <!-- Sustituye VIDEO_ID_4 por el ID del cuarto vídeo -->
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID_4"
+            title="El Duende Del Parque – Vídeo en directo"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <p class="video-title">Cuarto vídeo</p>
+        <p class="video-caption">Directo</p>
+      </div>
+
+    </div>
+    <p class="video-note">Una muestra de cómo suena El Duende Del Parque en directo.</p>
   </div>
 </div>
 
