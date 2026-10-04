@@ -92,10 +92,16 @@ content="Extremoduro, Robe, tributo Extremoduro, banda tributo Robe, conciertos 
   .show-info .city { color: var(--muted); font-size: 0.85rem; font-family: var(--font-mono); }
   .btn { display: inline-block; font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase; padding: 0.55rem 1.1rem; border: 1px solid var(--accent); color: var(--accent2); text-decoration: none; transition: background 0.2s, color 0.2s; cursor: pointer; background: none; }
   .btn:hover { background: var(--accent); color: var(--cream); }
+  .hero-actions { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 0.9rem; margin-top: 1.8rem; }
+  .hero-actions .btn { min-width: 175px; padding: 0.75rem 1.2rem; }
+  .hero-actions .btn-primary { background: var(--accent); color: var(--cream); border-color: var(--accent); }
+  .hero-actions .btn-primary:hover { background: var(--accent2); border-color: var(--accent2); }
+  .hero-actions .btn-secondary { border-color: var(--green2); color: var(--cream); }
+  .hero-actions .btn-secondary:hover { background: var(--green); border-color: var(--green2); }
  
   .gallery-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 6px; }
-  .gallery-item { aspect-ratio: 1; background: var(--bg3); border: 1px solid var(--border); display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--muted); font-family: var(--font-mono); font-size: 0.58rem; letter-spacing: 0.06em; overflow: hidden; transition: border-color 0.2s; }
-  .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .gallery-item { aspect-ratio: auto; height: auto; background: var(--bg3); border: 1px solid var(--border); display: block; color: var(--muted); font-family: var(--font-mono); font-size: 0.58rem; letter-spacing: 0.06em; overflow: hidden; transition: border-color 0.2s; }
+  .gallery-item img { width: 100%; height: auto; object-fit: contain; display: block; }
   .gallery-item:hover { border-color: var(--accent2); }
   .gallery-item svg { opacity: 0.2; margin-bottom: 4px; }
   .sub-label { font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin: 2.2rem 0 0.7rem; }
@@ -140,6 +146,8 @@ content="Extremoduro, Robe, tributo Extremoduro, banda tributo Robe, conciertos 
     .gallery-grid { grid-template-columns: repeat(2,1fr); }
     .video-grid { grid-template-columns: 1fr; }
     .contact-grid { grid-template-columns: 1fr; }
+    .hero-actions { gap: 0.65rem; }
+    .hero-actions .btn { min-width: 0; }
     .show-item { grid-template-columns: 56px 1fr; } .show-item .btn { display: none; }
   }
 </style>
@@ -175,6 +183,10 @@ content="Extremoduro, Robe, tributo Extremoduro, banda tributo Robe, conciertos 
      El Duende Del Parque - Tributo a Extremoduro y Robe
     </h1>
     <p class="hero-subtitle">Tributo a Extremoduro y Robe</p>
+    <div class="hero-actions">
+      <a href="#galeria" class="btn btn-primary">Escuchar y ver vídeos</a>
+      <a href="#contacto" class="btn btn-secondary">Contratación</a>
+    </div>
     <div class="hero-scroll">
       <div class="hero-scroll-line"></div>
       scroll
